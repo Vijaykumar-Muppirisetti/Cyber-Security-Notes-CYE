@@ -8,7 +8,7 @@ The triad’s three core principles are
 **Confidentiality:** Ensures that sensitive data is accessible only to authorized users and protected from unauthorized access.
 **Integrity:** Maintains the accuracy and trustworthiness of data, ensuring it hasn’t been tampered with or altered by unauthorized individuals.
 **Availability:** Guarantees that data and systems are accessible when needed by authorized users, minimizing downtime or disruptions.
-
+\assets\Pasted image 20250917181028.png
 ![[Pasted image 20250917181028.png]]
 
 ## Confidentiality
