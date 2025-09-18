@@ -9,7 +9,7 @@ The triad’s three core principles are
 **Integrity:** Maintains the accuracy and trustworthiness of data, ensuring it hasn’t been tampered with or altered by unauthorized individuals.
 **Availability:** Guarantees that data and systems are accessible when needed by authorized users, minimizing downtime or disruptions.
 <img src="assets/Pasted image 20250917181028.png">
-![[Pasted image 20250917181028.png]]
+
 
 ## Confidentiality
 Confidentiality ensures that sensitive information is accessible only to authorized individuals or systems and prevents unauthorized access. The goal is to protect private data from being viewed, accessed, or used by unauthorized persons.
@@ -23,8 +23,7 @@ Confidentiality ensures that sensitive information is accessible only to authori
 ### How to ensure Confidentiality?
 - **Encryption:** Use encryption techniques (e.g., AES, DES) to protect data. Even if attackers intercept the data, they won't be able to decrypt it.
 - **VPN:** A Virtual Private Network (VPN) ensures secure data transmission over the network by creating a protected tunnel.
-
-![[Pasted image 20250917181241.png]]
+<img src="Pasted image 20250917181241.png">
 
 ## Integrity 
 Integrity ensures that data remains unaltered during transmission or storage. If the data is modified in any way, its integrity is compromised. When data is corrupted, it means the integrity is lost, leading to potential errors or malicious changes.
@@ -45,8 +44,7 @@ To check if our data has been modified or not, we make use of a hash function.
 - Attaching the Hash: The generated hash value (H1) is attached to the data before transmission.
 - **Host B Verifies Integrity:** When Host 'B' receives the data, it runs the same hash function over the received data to generate a new hash value (H2).
 - **Comparison:** If the two hash values, H1 and H2, are equal (H1 = H2), this confirms that the data has not been modified, and its integrity has been maintained.
-
-![[Pasted image 20250917181459.png]]
+<img src="Pasted image 20250917181459.png">
 
 Note: Even a small change in the input (like altering a single word or character) will completely change the resulting hash."
 
@@ -65,8 +63,7 @@ To ensure availability, the network administrator should keep a check on the fol
 - **Regular Upgrades:** Keeping systems and software updated helps in maintaining performance and security.
 - **Failover Plan:** A failover system ensures that if one component fails, another can take over, minimizing downtime.
 - **Preventing Bottlenecks:** Network congestion or bottlenecks should be prevented to ensure consistent performance and prevent slowdowns.
-
-![[Pasted image 20250917181644.png]]
+<img src="Pasted image 20250917181644.png">
 
 ---
 
@@ -78,12 +75,11 @@ Without DNS, we’d have to remember the numerical IP address of every website w
 
 ## How Does DNS Work?
 The DNS process can be broken down into several steps, ensuring that users can access websites by simply typing a domain name into their browser.
-
-![[Pasted image 20250917192228.png]]
-![[Pasted image 20250917192235.png]]
-![[Pasted image 20250917192244.png]]
-![[Pasted image 20250917192253.png]]
-![[Pasted image 20250917192300.png]]
+<img src="Pasted image 20250917192228.png">
+<img src="Pasted image 20250917192235.png">
+<img src="Pasted image 20250917192244.png">
+<img src="Pasted image 20250917192253.png">
+<img src="Pasted image 20250917192300.png">
 
 1. **User Input:** You enter a website address (for example, www.geeksforgeeks.org) into your web browser.
 2. **Local Cache Check:** Your browser first checks its local cache to see if it has recently looked up the domain. If it finds the corresponding IP address, it uses that directly without querying external servers.
@@ -101,7 +97,7 @@ DNS operates through a hierarchical structure, ensuring scalability and reliabil
 - **Root DNS Servers:** These are the highest-level DNS servers and know where to find the TLD servers. They are crucial for directing DNS queries to the correct locations.
 - **TLD Servers:** These servers manage domain extensions like .com, .org, .net, .edu, .gov and others. They help route queries to the authoritative DNS servers for specific domains.
 - **Authoritative DNS Servers:** These are the servers that store the actual DNS records for domain names. They are responsible for providing the correct IP addresses that allow users to reach websites.
-![[Pasted image 20250917192539.png]]
+<img src="Pasted image 20250917192539.png">
 This hierarchical approach allows DNS to handle billions of queries every day, ensuring the stability and scalability of the internet.
 
 ## Types of Domains
@@ -110,7 +106,7 @@ DNS helps manage a wide variety of domain types to organize the vast number of w
 - **Generic Domains:** These include top-level domains like .com, .org, .net and .edu. These are widely used and recognized across the world.
 - **Country Code Domains:** These domains represent specific countries or regions, such as .in for India, .us for the United States, .uk for the United Kingdom and .jp for Japan.
 - **Inverse Domains:** Used for reverse DNS lookups, these domains help map IP addresses back to domain names. Reverse DNS lookups are useful for diagnostics and security purposes, ensuring that the source of network traffic is legitimate. So DNS can provide both the mapping for example to find the IP addresses of geeksforgeeks.org then we have to type
-![[Pasted image 20250917192655.png]]
+<img src="Pasted image 20250917192655.png">
 
 Understanding these categories is essential for managing domains effectively and recognizing the purpose behind different types of domains.
 
@@ -131,7 +127,7 @@ DNS Resolver is simply called a DNS Client and has the functionality for initiat
 **Types of DNS Queries**
 There are basically three types of DNS Queries that occur in DNS Lookup. These are stated below.
 
-![[Pasted image 20250917192816.png]]
+<img src="Pasted image 20250917192816.png">
 
 - **Recursive Query:** In this query, if the resolver is unable to find the record, in that case, DNS client wants the DNS Server will respond to the client in any way like with the requested source record or an error message.
 - **Iterative Query:** Iterative Query is the query in which DNS Client wants the best answer possible from the DNS Server.
@@ -156,7 +152,8 @@ By understanding DNSSEC, students can help secure websites against DNS-based att
 ## Reverse DNS Lookup
 Reverse DNS Lookup is the process of mapping an IP address back to its corresponding domain name. This is the opposite of the typical DNS lookup, where a domain name is resolved to an IP address. Reverse DNS is commonly used for:
 
-![[Pasted image 20250917193158.png]]
+<img src="Pasted image 20250917193158.png">
+
 
 - **Network Diagnostics:** System administrators use reverse DNS to determine the domain name associated with a specific IP address. This helps identify the source of network traffic.
 - **Email Security:** Many email servers perform reverse DNS lookups to verify that incoming emails are coming from legitimate sources. This helps prevent spam and fraud.
@@ -184,7 +181,9 @@ Instead of manually configuring each device with an IP address, DHCP allows devi
 
 ## Components of DHCP
 The main components of DHCP include:
-![[Pasted image 20250917193856.png]]
+
+<img src="Pasted image 20250917193856.png">
+
 
 - **DHCP Server:** DHCP Server is a server that holds IP Addresses and other information related to configuration.
 - **DHCP Client:** It is a device that receives configuration information from the server. It can be a mobile, laptop, computer or any other electronic device that requires a connection.
@@ -202,7 +201,7 @@ The main components of DHCP include:
 
 ### DHCP Packet Format
 Each field in the DHCP packet format plays a important role in enabling dynamic IP configuration, ensuring proper identification, addressing, timing, and communication between the client and server during the DHCP handshake process.
-![[Pasted image 20250917194158.png]]
+<img src="Pasted image 20250917194158.png">
 
 - **Hardware Length:** This is an 8-bit field defining the length of the physical address in bytes. e.g. for Ethernet the value is 6.
 - **Hop count:** This is an 8-bit field defining the maximum number of hops the packet can travel.
@@ -220,24 +219,24 @@ Each field in the DHCP packet format plays a important role in enabling dynamic 
 
 ## Working of DHCP
 DHCP works on the Application layer of the UDP Protocol. The main task of DHCP is to dynamically assigns IP Addresses to the Clients and allocate information on TCP/IP configuration to Clients.
-![[Pasted image 20250917194514.png]]
+<img src="Pasted image 20250917194514.png">
 
 The DHCP port number for the server is 67 and for the client is 68. It is a client-server protocol that uses UDP services. An IP address is assigned from a pool of addresses. In DHCP, the client and the server exchange mainly 4 DHCP messages in order to make a connection, also called the DORA process, but there are 8 DHCP messages in the process.
 
 ### The 8 DHCP Messages
 1. **DHCP Discover Message:** This is the first message generated in the communication process between the server and the client. This message is generated by the Client host in order to discover if there is any DHCP server/servers are present in a network or not. This message is broadcasted to all devices present in a network to find the DHCP server. This message is 342 or 576 bytes long.
-![[Pasted image 20250917194615.png]]
+<img src="Pasted image 20250917194615.png">
 
 As shown in the figure, the source MAC address (client PC) is 08002B2EAF2A, the destination MAC address(server) is FFFFFFFFFFFF, the source IP address is 0.0.0.0(because the PC has had no IP address till now) and the destination IP address is 255.255.255.255 (IP address used for broadcasting). As they discover message is broadcast to find out the DHCP server or servers in the network therefore broadcast IP address and MAC address is used.  
 
 2. **DHCP Offers A Message:** The server will respond to the host in this message specifying the unleased IP address and other TCP configuration information. This message is broadcasted by the server. The size of the message is 342 bytes. If there is more than one DHCP server present in the network then the client host will accept the first DHCP OFFER message it receives. Also, a server ID is specified in the packet in order to identify the server.
 
-![[Pasted image 20250917194713.png]]
+<img src="Pasted image 20250917194713.png">
 Now, for the offer message, the source IP address is 172.16.32.12 (server's IP address in the example), the destination IP address is 255.255.255.255 (broadcast IP address), the source MAC address is 00AA00123456, the destination MAC address is 00:11:22:33:44:55 (client's MAC address). Here, the offer message is broadcast by the DHCP server therefore destination IP address is the broadcast IP address and destination MAC address is 00:11:22:33:44:55 (client's MAC address)and the source IP address is the server IP address and the MAC address is the server MAC address. 
 Also, the server has provided the offered IP address 192.16.32.51 and a lease time of 72 hours(after this time the entry of the host will be erased from the server automatically). Also, the client identifier is the PC MAC address (08002B2EAF2A) for all the messages. 
 
 3. **DHCP Request Message:** When a client receives an offer message, it responds by broadcasting a DHCP request message. The client will produce a  gratuitous ARP in order to find if there is any other host present in the network with the same IP address. If there is no reply from another host, then there is no host with the same TCP configuration in the network and the message is broadcasted to the server showing the acceptance of the IP address. A Client ID is also added to this message. 
-![[Pasted image 20250917194726.png]]
+<img src="Pasted image 20250917194726.png">
 
 Now, the request message is broadcast by the client PC therefore source IP address is 0.0.0.0(as the client has no IP right now) and destination IP address is 255.255.255.255 (the broadcast IP address) and the source MAC address is 08002B2EAF2A (PC MAC address) and destination MAC address is FFFFFFFFFFFF. 
 
@@ -245,7 +244,7 @@ Now, the request message is broadcast by the client PC therefore source IP addre
 
 4. **DHCP Acknowledgment Message:** In response to the request message received, the server will make an entry with a specified client ID and bind the IP address offered with lease time. Now, the client will have the IP address provided by the server. 
 
-![[Pasted image 20250917194818.png]]
+<img src="Pasted image 20250917194818.png">
 Now the server will make an entry of the client host with the offered IP address and lease time. This IP address will not be provided by the server to any other host. The destination MAC address is 00:11:22:33:44:55 (client's MAC address) and the destination IP address is 255.255.255.255 and the source IP address is 172.16.32.12 and the source MAC address is 00AA00123456 (server MAC address).  
 
 5. **DHCP Negative Acknowledgment Message:** Whenever a DHCP server receives a request for an IP address that is invalid according to the scopes that are configured, it sends a DHCP NACK message to the client. E.g. when the server has no IP address unused or the pool is empty, then this message is sent by the server to the client. 
